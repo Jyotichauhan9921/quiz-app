@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your PICK?"
+        android:textSize="39dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"/>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="328dp"
+        android:layout_height="284dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@mipmap/capuchino" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@mipmap/americano" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@mipmap/latte" />
+
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:text="PREV" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="400dp"
+        android:text="NEXT" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textSize="39dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="550dp"/>
+</RelativeLayout>
